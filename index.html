@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brasa Burger | Hambúrguer Artesanal</title>
+
+    <meta name="description"
+          content="Conheça o cardápio da Brasa Burger e peça seu hambúrguer pelo WhatsApp.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="#inicio" class="logo">BRASA<span>BURGER.</span></a>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <a href="#cardapio" class="btn btn-small">Ver cardápio</a>
+</header>
+
+<main>
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <span class="tag">HAMBÚRGUER ARTESANAL</span>
+
+            <h1>O sabor que<br>acende sua <span>fome.</span></h1>
+
+            <p>
+                Hambúrgueres preparados na hora, ingredientes selecionados
+                e muito sabor em cada mordida.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#cardapio" class="btn">Conhecer cardápio</a>
+                <a href="#sobre" class="btn btn-outline">Nossa história</a>
+            </div>
+
+            <div class="hero-info">
+                <div>
+                    <strong>100%</strong>
+                    <small>Sabor</small>
+                </div>
+
+                <div>
+                    <strong>Na hora</strong>
+                    <small>Preparado para você</small>
+                </div>
+
+                <div>
+                    <strong>Artesanal</strong>
+                    <small>Feito com cuidado</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1100&q=85"
+                alt="Hambúrguer artesanal com queijo e salada">
+            <div class="image-label">
+                <span>🔥</span>
+                <div>
+                    <strong>Feito na brasa</strong>
+                    <small>Sabor de verdade</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section menu-section" id="cardapio">
+        <div class="section-heading">
+            <div>
+                <span class="tag">ESCOLHA O SEU FAVORITO</span>
+                <h2>Nosso <span>cardápio.</span></h2>
+            </div>
+
+            <p>
+                Do clássico ao especial, tem sempre um
+                hambúrguer esperando por você.
+            </p>
+        </div>
+
+        <div class="filters">
+            <button class="filter active" data-filter="todos">Todos</button>
+            <button class="filter" data-filter="burgers">Hambúrgueres</button>
+            <button class="filter" data-filter="acompanhamentos">Acompanhamentos</button>
+            <button class="filter" data-filter="bebidas">Bebidas</button>
+        </div>
+
+        <div class="products">
+
+            <article class="product" data-category="burgers">
+                <img
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                    alt="Brasa Clássico">
+                <div class="product-info">
+                    <span class="product-type">O CLÁSSICO</span>
+                    <h3>Brasa Clássico</h3>
+                    <p>Pão brioche, carne artesanal, queijo e molho especial.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 24,90</strong>
+                        <button class="add-button"
+                            data-name="Brasa Clássico"
+                            data-price="24.90">+</button>
+                    </div>
+                </div>
+<article class="product" data-category="burgers">
+    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Duplo Brasa - hambúrguer artesanal">
+
+    <div class="product-info">
+        <span class="product-type">MAIS PEDIDO</span>
+        <h3>Duplo Brasa</h3>
+        <p>Dois hambúrgueres, queijo derretido e molho da casa.</p>
+
+        <div class="product-bottom">
+            <strong>R$ 32,90</strong>
+            <button class="add-button" data-name="Duplo Brasa" data-price="32.90">+</button>
+        </div>
+    </div>
+</article>
+            <article class="product" data-category="burgers">
+                <img
+                    src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80"
+                    alt="Burger Bacon">
+                <div class="product-info">
+                    <span class="product-type">ESPECIAL</span>
+                    <h3>Burger Bacon</h3>
+                    <p>Carne artesanal, bacon crocante, queijo e barbecue.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 29,90</strong>
+                        <button class="add-button"
+                            data-name="Burger Bacon"
+                            data-price="29.90">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product" data-category="acompanhamentos">
+                <img
+                    src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80"
+                    alt="Batata frita">
+                <div class="product-info">
+                    <span class="product-type">ACOMPANHAMENTO</span>
+                    <h3>Batata Crocante</h3>
+                    <p>Porção de batatas fritas, crocantes por fora.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 14,90</strong>
+                        <button class="add-button"
+                            data-name="Batata Crocante"
+                            data-price="14.90">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product" data-category="acompanhamentos">
+                <img
+                    src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80"
+                    alt="Pizza individual">
+                <div class="product-info">
+                    <span class="product-type">EXTRA</span>
+                    <h3>Porção Especial</h3>
+                    <p>Uma opção saborosa para acompanhar seu lanche.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 16,90</strong>
+                        <button class="add-button"
+                            data-name="Porção Especial"
+                            data-price="16.90">+</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product" data-category="bebidas">
+                <img
+                    src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?auto=format&fit=crop&w=700&q=80"
+                    alt="Refrigerante gelado">
+                <div class="product-info">
+                    <span class="product-type">BEBIDA</span>
+                    <h3>Refrigerante</h3>
+                    <p>Consulte as opções e os tamanhos disponíveis.</p>
+                    <div class="product-bottom">
+                        <strong>R$ 7,00</strong>
+                        <button class="add-button"
+                            data-name="Refrigerante"
+                            data-price="7.00">+</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="cart">
+            <div>
+                <span>Seu pedido</span>
+                <p id="cart-count">0 itens adicionados</p>
+                <strong id="cart-total">R$ 0,00</strong>
+            </div>
+
+            <button id="checkout" class="btn">
+                Pedir pelo WhatsApp ↗
+            </button>
+        </div>
+
+        <p class="demo-note">
+            Modelo demonstrativo: preços, produtos e informações são fictícios.
+        </p>
+    </section>
+
+    <section class="about" id="sobre">
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee?auto=format&fit=crop&w=1000&q=80"
+                alt="Ambiente de restaurante">
+        </div>
+
+        <div class="about-content">
+            <span class="tag">MAIS QUE UM HAMBÚRGUER</span>
+
+            <h2>Feito com paixão.<br><span>Servido com sabor.</span></h2>
+
+            <p>
+                Na Brasa Burger, acreditamos que um bom lanche começa
+                com ingredientes selecionados e termina com um sorriso.
+                Cada pedido é preparado com atenção aos detalhes.
+            </p>
+
+            <a href="#cardapio" class="btn">Escolher meu lanche</a>
+        </div>
+    </section>
+
+    <section class="contact section" id="contato">
+        <span class="tag">ESTAMOS ESPERANDO VOCÊ</span>
+        <h2>Bateu a fome?</h2>
+        <p>Escolha seu favorito e faça seu pedido pelo WhatsApp.</p>
+        <button id="contact-whatsapp" class="btn">
+            Falar pelo WhatsApp ↗
+        </button>
+
+        <p class="contact-details">
+            Paraisópolis – MG · Endereço e horários a confirmar
+        </p>
+    </section>
+</main>
+
+<footer class="footer">
+    <a href="#inicio" class="logo">BRASA<span>BURGER.</span></a>
+    <p>Modelo de demonstração para um negócio fictício.</p>
+    <p>© <span id="year"></span> Brasa Burger</p>
+</footer>
+
+</body>
+</html>
