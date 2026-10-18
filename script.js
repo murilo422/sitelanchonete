@@ -85,13 +85,7 @@ botoesFiltro.forEach((botao) => {
 
 // Abrir WhatsApp com o pedido pronto
 function abrirWhatsApp() {
-    if (WHATSAPP === "5535999462924") {
-        alert(
-            "Este é um site demonstrativo. " +
-            "Para receber pedidos, configure o número real do estabelecimento no arquivo script.js."
-        );
-        return;
-    }
+    const WHATSAPP = "5535999462924";
 
     if (!/^\d{12,13}$/.test(WHATSAPP)) {
         alert("Confira o número do WhatsApp configurado no site.");
